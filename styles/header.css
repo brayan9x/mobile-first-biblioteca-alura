@@ -23,23 +23,36 @@
 h1 {
     display: none;
 }
-.lista-menu{
+
+.lista-menu {
     display: block;
     position: absolute;
     top: 100%;
 }
-.lista-menu-titulo,.lista-menu-item{
-padding: 1em;
-background-color: var(--branco);
+
+.lista-menu-titulo,
+.lista-menu-item {
+    padding: 1em;
+    background-color: var(--branco);
 }
-.lista-menu-titulo{
+
+.lista-menu-titulo {
     color: var(--amarelo);
+    font-weight: 700;
 }
-.lista-menu-link{
+
+.lista-menu-link {
     background: var(--roxo);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
 }
+
+.div-menu{
+    display: none;
+}
+
 @media screen and (min-width:1024px) {
     h1 {
         display: block;
@@ -47,9 +60,11 @@ background-color: var(--branco);
     }
 
 }
-.lista-menu{
+
+.lista-menu {
     display: none;
 }
-.div-menu:checked~.lista-menu{
+
+.div-menu:checked~.lista-menu {
     display: block;
 }
